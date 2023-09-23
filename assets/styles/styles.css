@@ -49,19 +49,23 @@ h2{
     background: #ddd;
     color: black;
 }
-
-.flaxcontainer{
-
+.flex{
+    display: inline-flex;
+    flex-direction: row;
+justify-content: space-between;
+align-items: normal;
+    
+}
+.flaxcontainer1{
+    
     float: left;
-    width: 70vw;
-    height: 150vh;
+    
     display: flex;
     flex-wrap: wrap;
     margin-left: 10px;
     background-color: rgba(231, 212, 37, 0.534);
     flex-direction: row;
     justify-content: flex-start;
-    align-items: stretch;
     font-size: 17px;
     
 }
@@ -69,6 +73,7 @@ h2{
     padding: 10px;
 }
 .flaxcontainer2{
+    
     justify-content: flex-start;
     float: right;
     display: flex;
@@ -76,18 +81,16 @@ h2{
     margin-right: 10px;
     background-color: bisque;
     flex-direction: row;
-    width: 25vw;
-    height: 150vh;
-    align-items: stretch;
-    justify-content:center;
+    align-items: flex-start;
+
     font-size: 17px;
     
 }
 .cat{
     width: 49.5%;
-    height: 300px;
-    display: flex;
     
+    
+    align-items: stretch;
     margin-left: 2px;
     background-color: rgb(235, 188, 62);
     flex-wrap: wrap;
@@ -95,13 +98,16 @@ h2{
     
 .cat2{
     width: 99.4%;
-    height: 260px;
     display: flex;
     flex-wrap: wrap;
     
     margin-left: 2px;
     background-color: rgb(221, 230, 96);
     align-self: stretch;
+}
+.cat2 p{
+    align-self:flex-start;
+    width: 61%;
 }
 
 .blok_footer{
@@ -151,6 +157,7 @@ h2{
     width: 25vw;
     align-items: center;
     display: flex;
+    height: 300px;
 }
 .img3{
     width: 10vw;
